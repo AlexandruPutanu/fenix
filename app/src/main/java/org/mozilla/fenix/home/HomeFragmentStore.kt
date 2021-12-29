@@ -218,7 +218,6 @@ private fun homeFragmentStateReducer(
         }
         is HomeFragmentAction.PocketStoriesCategoriesSelectionsChange -> {
             val updatedCategoriesState = state.copy(
-                pocketStoriesCategories = action.storiesCategories,
                 pocketStoriesCategoriesSelections = action.categoriesSelected
             )
             // Whenever categories change stories to be displayed needs to also be changed.
